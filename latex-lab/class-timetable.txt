@@ -1,0 +1,41 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+\usepackage{array}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\title{\Huge Department of Computer Science and Business Systems \\[0.5em] 
+\Large Class Time Table}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\hrule
+\vspace{0.5cm}
+
+\section*{Weekly Schedule}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Day} & \textbf{9--10 AM} & \textbf{10--11 AM} & \textbf{11--12 PM} & \textbf{12--1 PM} & \textbf{2--4 PM} & \textbf{4--6 PM} \\
+\hline
+Monday    & DSA   & OS    & DDCO  & DV    & DSA Lab & SCR \\
+\hline
+Tuesday   & OS    & DV    & DSA   & DDCO  & OS Lab  & SCR \\
+\hline
+Wednesday & DDCO  & DSA   & OS    & DV    & DDCO Lab & SCR \\
+\hline
+Thursday  & DV    & OS    & DSA   & DDCO  & DSA Lab & SCR \\
+\hline
+Friday    & DSA   & DDCO  & OS    & DV    & OS Lab  & SCR \\
+\hline
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}   
+\usepackage{makeidx}    
+\usepackage{lipsum}     
+
+\makeindex
+
+\title{Design and Analysis of an Intelligent Traffic Monitoring System using Computer Vision}
+\author{Department of Computer Science and Business Systems}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+Traffic congestion is a major urban challenge. Computer Vision offers intelligent solutions.
+\index{Traffic Monitoring}
+\index{Computer Vision}
+See Figure~\ref{fig:system} for a schematic overview.
+
+\lipsum[1]
+
+\chapter{System Design}
+The system uses cameras and image processing algorithms to detect vehicles.
+\index{System Design}
+Refer to Section~\ref{sec:analysis} for performance analysis.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{traffic_system.png} % replace with actual image
+    \caption{Intelligent Traffic Monitoring System Architecture}
+    \label{fig:system}
+\end{figure}
+
+\lipsum[2]
+
+\chapter{Analysis}
+\label{sec:analysis}
+Performance is evaluated using metrics such as accuracy, latency, and scalability.
+\index{Analysis}
+According to \cite{viola2001rapid}, object detection methods are crucial for real-time monitoring.
+
+\lipsum[3]
+
+\chapter{Conclusion}
+This research highlights the potential of Computer Vision in traffic monitoring.
+Future work includes integration with IoT and smart city infrastructure.
+\index{Conclusion}
+
+\lipsum[4]
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\printindex
+\end{document} 

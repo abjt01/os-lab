@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{ MUNAGALA RAMALAKSHMIREDDY}}\\
+    \vspace{4pt}
+    Banglore, India\;|\;
+    \href{mailto:youremail@example.com}{munagalaramalakskshmireddy@gmail.com} \;|\;
+    +91-9391547786 \;|\;
+    \href{https://linkedin.com/in/yourprofile}{LinkedIn}
+\end{center}
+
+\section*{Education}
+\textbf{BE in computer science and business system} \hfill 2021 -- 2025\\
+ Dayananda Sagar College of Engineering, Banglore\\
+CGPA: 9.8 / 10
+
+\section*{Skills}
+\textbf{Programming Languages:} C, C++, Python, \\
+\textbf{Web Technologies:} HTML, CSS, JavaScript\\
+\textbf{Tools:} Git, VS Code, LaTeX\\
+\textbf{Soft Skills:} Communication, Hardworking.
+
+\section*{Experience}
+\textbf{Software Development Intern} \hfill Jun 2024 -- Aug 2028\\
+ Perficient, Banglore
+\begin{itemize}
+    \item Developed and optimized application features using Python
+    \item Collaborated with team members to debug and improve system performance
+\end{itemize}
+
+\section*{Projects}
+\textbf{Student Management System}
+\begin{itemize}
+    \item Designed a web-based system to manage student records efficiently
+    \item Used HTML, CSS, JavaScript, and MySQL
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}
+    \item Python for Everybody -- Coursera
+    \item Data Structures and Algorithms -- Udemy
+    \item Introduction to Web Development -- Infosys Springboard
+\end{itemize}
+
+\section*{Achievements}
+\begin{itemize}
+    \item Secured First Place in College-Level Coding Competition
+    \item Selected among Top 10\% students based on academic performance
+    \item Successfully completed 100+ problems on competitive programming platforms
+\end{itemize}
+
+\section*{Hobbies}
+\begin{itemize}
+    \item Painting
+    \item Solving logical and coding challenges
+    \item Listening to music
+    \item Travelling
+\end{itemize}
+\end{document}

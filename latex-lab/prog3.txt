@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{lipsum} % optional, for quick filler
+% Custom colors
+\definecolor{myorange}{RGB}{255,165,0}
+\definecolor{mypurple}{HTML}{9B30FF}
+\begin{document}
+\section*{Text styles \& sizes}
+\textbf{Bold} \quad \textit{Italic} \quad \underline{Underline} \quad \texttt{Monospaced}\\[4pt]
+{\tiny tiny} {\scriptsize scriptsize} {\footnotesize footnotesize} {\small small} {\normalsize
+normal} {\large large} {\Large Larger} {\LARGE EvenLarger} {\huge Huge} {\Huge Hugest}
+
+\section*{Alignment}
+\begin{flushleft}Left aligned text.\end{flushleft}
+\begin{center}Centered text.\end{center}
+\begin{flushright}Right aligned text.\end{flushright}
+\section*{Colors and backgrounds}
+\textcolor{red}{Red text.} \quad \textcolor{myorange}{Custom orange.} \quad
+\textcolor{mypurple}{Custom purple.}\\[4pt]
+\colorbox{yellow}{Highlighted text} \quad \fcolorbox{red}{white}{Framed box} \quad
+\textcolor{white}{\colorbox{mypurple}{White on purple}}\\[6pt]
+% Example full-page color (uncomment to try)
+% \pagecolor{black!5}\color{black}
+\section*{Lists (itemize, enumerate, nested, custom labels)}
+\begin{itemize}[label=\textbullet]
+\item First item
+\item Second item
+\begin{enumerate}[label=(\roman*)]
+\item Read papers
+\item Summarize findings
+\end{enumerate}
+
+\item Third item
+\end{itemize}
+\begin{itemize}[label=$\ast$]
+\item Starred item
+\item Another starred item
+\end{itemize}
+
+\section*{Mathematics}
+Inline math: $a^2+b^2=c^2$.
+Displayed quadratic formula:
+\[
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\]
+Aligned equations:
+\begin{align*}
+y &= mx + c \\
+E &= mc^2
+\end{align*}
+Matrix and cases:
+\[
+\begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}
+\qquad
+f(x)=\begin{cases}
+x^2 & x\ge 0\\
+-x & x<0
+\end{cases}
+\]
+Common symbols and calculus:
+$\alpha,\beta,\pi,\infty,\Rightarrow,\leq,\neq$ \\
+$\displaystyle \int_0^1 x^2\,dx=\frac{1}{3},\quad \lim_{x\to0}\frac{\sin x}{x}=1$
+\end{document}

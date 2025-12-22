@@ -1,0 +1,148 @@
+\documentclass[letterpaper,11pt]{article}
+
+% Page layout and style packages
+\usepackage[margin=1in]{geometry}
+\usepackage{lipsum} % Dummy text
+\usepackage{graphicx} % Images
+\usepackage{multicol} % Multiple columns
+\usepackage{xcolor} % Text colors
+\usepackage{pagecolor} % Page background color
+\usepackage{amsmath} % Math equations
+\usepackage{fancyhdr} % Headers/footers
+\usepackage{hyperref} % Clickable links
+\usepackage{pdflscape} % Landscape pages
+
+
+% Modern business header/footer style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Quarterly Report}
+\fancyhead[R]{\includegraphics[height=1cm]{example-image}}
+\fancyfoot[C]{Page \thepage}
+
+\begin{document}
+
+\section*{Program 2: Styling Pages in \LaTeX}
+
+% -------------------------------
+% 1. Standard and Custom Paper Sizes
+% -------------------------------
+\subsection*{Standard and Custom Paper Sizes}
+
+\section*{Letter (8.5 $\times$ 11 in)}
+\lipsum[1]
+
+\clearpage
+
+% A4 size
+\newgeometry{paper=a4paper, margin=1in}
+\section*{A4 (210 $\times$ 297 mm)}
+This page uses A4 paper size, common in many countries.
+\lipsum[2]
+
+\clearpage
+
+% Legal size
+\newgeometry{paper=legalpaper, margin=1in}
+\section*{Legal (8.5 $\times$ 14 in)}
+This page uses Legal paper size.
+\lipsum[3]
+
+\clearpage
+
+% Custom postcard size
+\newgeometry{paperwidth=100mm, paperheight=150mm, margin=10mm}
+\section*{Custom Postcard (100 $\times$ 150 mm)}
+This mimics a postcard-style page.
+
+\clearpage
+
+% Square book-style page
+\newgeometry{paperwidth=6in, paperheight=6in, margin=0.75in}
+\section*{Square Format Page (6 $\times$ 6 in)}
+This simulates a square book layout.
+
+\clearpage
+
+% Restore normal layout
+\restoregeometry
+
+% -------------------------------
+% 2. Modern Business / Newsletter Styles
+% -------------------------------
+\subsection*{Modern Business and Newsletter Styles}
+
+\section*{Business Performance}
+Professional report page with company logo in the header
+and custom footer using \texttt{fancyhdr}.
+\lipsum[4]
+
+\clearpage
+
+% Newsletter-style page
+\pagestyle{empty}
+\begin{center}
+\includegraphics[width=2.5in]{example-image}\\[6pt]
+{\Large\textbf{Monthly Newsletter}}
+\end{center}
+
+\begin{multicols}{2}
+\subsection*{Latest Updates}
+\lipsum[1]
+
+\subsection*{Upcoming Events}
+\lipsum[2]
+\end{multicols}
+
+\clearpage
+\pagestyle{fancy}
+
+% -------------------------------
+% 3. Package Examples
+% -------------------------------
+\subsection*{Package Examples}
+
+\paragraph{graphicx}
+Including and scaling an image:
+\begin{center}
+\includegraphics[width=0.3\textwidth]{example-image}
+\end{center}
+
+\paragraph{xcolor and pagecolor}
+\textcolor{blue}{This is blue text.}
+
+\pagecolor{lightgray}
+This page has a light gray background using \texttt{pagecolor}.
+
+\clearpage
+\pagecolor{white}
+
+\paragraph{amsmath}
+Example of a display equation:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+\paragraph{hyperref}
+Visit the \href{https://www.latex-project.org}{\LaTeX{} Project Website}.
+
+% -------------------------------
+% 4. Page Orientation and Columns
+% -------------------------------
+\subsection*{Page Orientation and Multi-Column Layout}
+
+Normal portrait content before landscape.
+
+\begin{landscape}
+\section*{Landscape Page}
+This page is in landscape mode using the \texttt{pdflscape} package.
+\lipsum[6]
+\end{landscape}
+
+Back to portrait mode.
+
+\section*{Multi-Column Layout}
+\begin{multicols}{2}
+\lipsum[5]
+\end{multicols}
+\end{document}

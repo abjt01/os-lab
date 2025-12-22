@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}        
+\usepackage{multicol}      
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+
+\geometry{margin=0.8in}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Department of Computer Science and Business Systems}
+\fancyhead[R]{\thepage}
+
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+
+\title{\Huge \textbf{CSBS Times} \\[0.5em] 
+\Large Department Newspaper / Magazine}
+\author{Department of Computer Science and Business Systems}
+\date{\today}
+
+\begin{document}
+\maketitle
+\hrule
+\vspace{0.5cm}
+
+
+\begin{center}
+\textbf{\Large Breaking News: Innovation in CSBS!}
+\end{center}
+\lipsum[1]
+
+\begin{multicols}{2}
+
+\section*{Tech Spotlight}
+Artificial Intelligence and Data Science are reshaping industries. 
+Our department students are working on cutting-edge projects.
+\lipsum[2]
+
+\section*{Student Achievements}
+From hackathons to research papers, CSBS students are making their mark.
+\lipsum[3]
+
+\section*{Faculty Column}
+Professors share insights on operating systems, data structures, and digital design.
+\lipsum[4]
+
+\section*{Lab Chronicles}
+Hands-on learning in DSA Lab, OS Lab, and DDCO Lab keeps students engaged.
+\lipsum[5]
+
+\section*{Events and Workshops}
+Recent seminars on cloud computing and visualization attracted wide participation.
+\lipsum[6]
+
+\section*{Opinion}
+SCR sessions encourage career readiness and personal growth.
+\lipsum[7]
+
+\end{multicols}
+
+\vspace{1cm}
+\hrule
+\begin{center}
+\textbf{CSBS Times • Department of Computer Science and Business Systems}
+\end{center}
+
+\end{document}

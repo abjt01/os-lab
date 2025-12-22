@@ -1,0 +1,29 @@
+% \documentclass{article}
+% \begin{document}
+    % \title{My First LaTeX Document}
+    % \author{Your Name}
+    % \date{\today}
+    % \maketitle
+    % \section{Introduction}
+    % This is the introduction section.
+    % \section{Background}
+    
+    % This section gives background details.
+    % \subsection{History}
+    % This is a subsection.
+% \end{document}
+------------------------------------------------------------
+\documentclass{book}
+\begin{document}
+    \title{My First Book}
+    \author{Your Name}
+    \date{\today}
+    \maketitle
+    \tableofcontents
+    \chapter{Introduction}
+    This is the first chapter.
+    \section{Motivation}
+    Why write this book?
+    \chapter{Background}
+    This is the second chapter.
+\end{document}

@@ -1,0 +1,98 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lipsum} 
+
+
+\usetheme{Madrid}
+\usecolortheme{seahorse}
+
+
+\title[AI Traffic Monitoring]{AI-Based Intelligent Traffic Monitoring System for Smart Cities}
+\author{Department of Computer Science and Business Systems}
+\date{\today}
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\begin{frame}{Agenda}
+    \tableofcontents
+\end{frame}
+
+
+\section{Introduction}
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item Traffic congestion is a major challenge in smart cities.
+        \item AI and Computer Vision provide intelligent monitoring solutions.
+        \item Goal: Enhance safety, efficiency, and sustainability.
+    \end{itemize}
+\end{frame}
+
+
+\section{System Design}
+\begin{frame}{System Architecture}
+    \begin{itemize}
+        \item Cameras capture real-time traffic footage.
+        \item AI models detect vehicles, pedestrians, and traffic violations.
+        \item Data integrated with smart city infrastructure.
+    \end{itemize}
+    \begin{figure}
+        \includegraphics[width=0.7\textwidth]{traffic_system.png} % replace with actual image
+        \caption{Proposed Traffic Monitoring System}
+    \end{figure}
+\end{frame}
+
+
+\section{Analysis}
+\begin{frame}{Performance Analysis}
+    \begin{itemize}
+        \item Metrics: Accuracy, Latency, Scalability.
+        \item AI-based detection improves response time.
+        \item Integration with IoT enables predictive analytics.
+    \end{itemize}
+\end{frame}
+
+
+\section{Applications}
+\begin{frame}{Applications in Smart Cities}
+    \begin{itemize}
+        \item Real-time traffic violation detection.
+        \item Adaptive traffic signal control.
+        \item Emergency vehicle prioritization.
+        \item Data-driven urban planning.
+    \end{itemize}
+\end{frame}
+
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item AI-based monitoring enhances traffic management.
+        \item Supports smart city initiatives.
+        \item Future work: Deep learning, edge computing, and IoT integration.
+    \end{itemize}
+\end{frame}
+
+
+\section{References}
+\begin{frame}{References}
+    \begin{thebibliography}{10}
+        \bibitem{viola2001}
+        Viola, P. and Jones, M. (2001). Rapid object detection using a boosted cascade of simple features.
+        
+        \bibitem{szeliski2010}
+        Szeliski, R. (2010). Computer Vision: Algorithms and Applications. Springer.
+        
+        \bibitem{zhao2019}
+        Zhao, Y. and Chen, L. (2019). Traffic surveillance using computer vision: A review. IEEE Transactions on Intelligent Transportation Systems.
+    \end{thebibliography}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[twocolumn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+\usepackage{times}  
+\usepackage{geometry}
+\geometry{margin=0.7in}
+
+\title{\Huge The Daily Times}
+\author{By John Doe}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\hrule
+\vspace{0.5cm}
+
+\section*{Breaking News: A Random Discovery}
+\lipsum[1-2]
+
+\section*{Local Events}
+\lipsum[3]
+
+\section*{Science and Technology}
+Today, researchers announced a breakthrough in quantum computing. 
+The new system promises faster calculations and improved efficiency.
+\lipsum[4]
+
+\section*{Sports}
+The city stadium hosted a thrilling football match yesterday. Fans cheered as the home team secured victory.
+\lipsum[5]
+
+\section*{Opinion}
+\lipsum[6]
+
+\end{document}

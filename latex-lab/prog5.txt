@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{graphicx}   % Images
+\usepackage{hyperref}   % Hyperlinks
+\usepackage{cleveref}   % Smart references
+\usepackage{makeidx}    % Index
+
+\makeindex
+
+\begin{document}
+
+\section{Introduction}\label{sec:intro}
+This is the introduction section.  
+We reference \cref{sec:method} and \cref{fig:sample}.
+
+\section{Methodology}\label{sec:method}
+Our methodology is described here.  
+See \cref{tab:results} for experimental results.
+
+\begin{table}[h]
+\centering
+\caption{Experimental Results}
+\label{tab:results}
+\begin{tabular}{|c|c|}
+\hline
+Trial & Value \\
+\hline
+1 & 0.85 \\
+2 & 0.92 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{example-image}
+\caption{Sample Figure}
+\label{fig:sample}
+\end{figure}
+
+\clearpage
+
+As shown by Einstein~\cite{einstein} and Dirac~\cite{dirac}.
+
+\begin{thebibliography}{9}
+
+\bibitem{einstein}
+A. Einstein,
+\textit{Zur Elektrodynamik bewegter Körper},
+Annalen der Physik, 1905.
+
+\bibitem{dirac}
+P. A. M. Dirac,
+\textit{The Principles of Quantum Mechanics},
+Oxford University Press, 1930.
+
+\end{thebibliography}
+
+\section{Index Example}
+Quantum mechanics\index{quantum mechanics} is a fundamental theory.  
+Uncertainty principle\index{uncertainty principle} was proposed by Heisenberg\index{Heisenberg}.
+
+\printindex
+
+\end{document}

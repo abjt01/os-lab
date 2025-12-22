@@ -1,0 +1,83 @@
+\documentclass[a4paper,12pt]{report}	
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}        
+\usepackage{listings}      
+\usepackage{xcolor}        
+\usepackage{geometry}
+\geometry{margin=1in}
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{green!50!black},
+    showstringspaces=false,
+    frame=single,
+    breaklines=true
+}
+
+\title{\Huge Python Handbook}
+\author{Department of Computer Science and Business Systems}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+\lipsum[1-2]
+
+\chapter{Basics of Python}
+\section{Hello World}
+Here is the simplest Python program:
+
+\begin{lstlisting}[style=python]
+print("Hello, World!")
+\end{lstlisting}
+
+\section{Variables and Data Types}
+\lipsum[3]
+
+\begin{lstlisting}[style=python]
+x = 10
+y = 3.14
+name = "Alice"
+print(x, y, name)
+\end{lstlisting}
+
+\chapter{Control Structures}
+\section{If-Else}
+\begin{lstlisting}[style=python]
+num = 5
+if num > 0:
+    print("Positive")
+else:
+    print("Non-positive")
+\end{lstlisting}
+
+\section{Loops}
+\begin{lstlisting}[style=python]
+for i in range(5):
+    print("Iteration:", i)
+\end{lstlisting}
+
+\chapter{Functions}
+\begin{lstlisting}[style=python]
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+\end{lstlisting}
+
+\chapter{Modules and Libraries}
+\lipsum[4]
+
+\begin{lstlisting}[style=python]
+import math
+print(math.sqrt(16))
+\end{lstlisting}
+
+\chapter{Conclusion}
+\lipsum[5]
+
+\end{document}
