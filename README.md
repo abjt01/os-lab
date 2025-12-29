@@ -1,3 +1,7 @@
 # os-lab
-temp_repo
+temp_repo:
 OS LAB PRACTICALS QUES.
+
+LateX LAB PRACTICALS QUES.
+
+DS LAB PRACTICALS QUES.
